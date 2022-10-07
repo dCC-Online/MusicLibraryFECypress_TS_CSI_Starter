@@ -30,7 +30,7 @@ const EditSong = ({ handleClose, show, props }) => {
       <form onSubmit={handleSubmit}>
                 <h1>Edit Song</h1>
                 <label>Title</label>
-                <input name="title" onChange={(e)=>setTitle(e.target.value)} defaultValue={props.title} data-test="edit-title" />
+                <input name="title" onChange={(e)=>setTitle(e.target.value)} defaultValue={props.title}/>
                 <label>Artist</label>
                 <input name="artist" onChange={(e)=>setArtist(e.target.value)} defaultValue={props.artist}/>
                 <label>Album</label>
@@ -39,7 +39,7 @@ const EditSong = ({ handleClose, show, props }) => {
                 <input name="genre" onChange={(e)=>setGenre(e.target.value)} defaultValue={props.genre}/>
                 <label>Release Date</label>
                 <input type="date" name="release_date" onChange={(e)=>setRelease(e.target.value)} defaultValue={props.release_date}/>
-                <button type="submit" data-testid="submit-btn">Update Song</button>
+                <button type="submit">Update Song</button>
             </form>
         <button type="button" onClick={handleClose}>
           Close
